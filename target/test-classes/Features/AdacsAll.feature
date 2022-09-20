@@ -2,7 +2,7 @@ Feature: validation of booking   in adactinhotel Web Application
    
      
    
-Scenario: TC01_validation of booking with valid details
+Scenario Outline: TC01_validation of booking with valid details
   Given User launch Adactinhotel Web Application
   When User entres valid username and valid password
   When User clicks Login Button
@@ -16,15 +16,17 @@ Scenario: TC01_validation of booking with valid details
   When user click contine button
   Then user  verify booking page is displayed
   
-  When user enters valid first name and last name
-  When user enters valid billing address
-  When user enters  valid credit card number 
+  When user enters valid "<firstname>" and "<lastname>" and "<billingaddress>" and "<ccnum>" and "<cvvnumber>"
   When user click Credit Card Type
   When user clicks valid Expiry month,Expiry year
-  When user enters valid cvv number
   And user select book now button
   Then user should get order number
-  
+  Examples: 
+      | firstname | lastname | billingaddress | ccnum            | cvvnumber |
+      | kumar     | logan    | coimabtore     | 1234567891011145 |       123 |
+      | kumaran   | logan    | vellakovil     | 1234567891011146 |       124 |
+      | arun      | kumar    | chennai        | 1234567891011147 |       125 |
+      | kumarans  | logans   | tiruppur       | 1234567891011148 |       126 |
     
 
 
