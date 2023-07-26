@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="3.079316">
+<testcase classname="validation of booking   in adactinhotel Web Application" name="TC01_validation of booking with valid details" time="3.079316">
+<system-out><![CDATA[Given User launch Adactinhotel Web Application..............................skipped
+When User entres valid username and valid password..........................skipped
+When User clicks Login Button...............................................skipped
+Then user verify Home page is displayed.....................................skipped
+Then user click valid location,hotelname,roomtype,roomnumber,checkindate,checkoutdate,adultsandchlidcountperroom.skipped
+Then user click search button...............................................skipped
+Then user  verify price page is displayed...................................skipped
+When user selects select radio button.......................................skipped
+When user click contine button..............................................skipped
+Then user  verify booking page is displayed.................................skipped
+When user enters valid first name and last name.............................skipped
+When user enters valid billing address......................................skipped
+When user enters  valid credit card number..................................skipped
+When user click Credit Card Type............................................skipped
+When user clicks valid Expiry month,Expiry year.............................skipped
+When user enters valid cvv number...........................................skipped
+And user select book now button.............................................skipped
+Then user should get order number...........................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

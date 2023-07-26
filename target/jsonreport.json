@@ -1,0 +1,273 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-03T16:18:59.195Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1244600,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "HooksClass.excutuion()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "TC01_validation of booking with valid details",
+        "description": "",
+        "id": "validation-of-booking---in-adactinhotel-web-application;tc01-validation-of-booking-with-valid-details",
+        "after": [
+          {
+            "result": {
+              "duration": 40800,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "HooksClass.screenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3289200,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User launch Adactinhotel Web Application",
+            "match": {
+              "location": "StepDefinitionvalid.user_launch_Adactinhotel_Web_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8310900,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User entres valid username and valid password",
+            "match": {
+              "location": "StepDefinitionvalid.user_entres_valid_username_and_valid_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7875900,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User clicks Login Button",
+            "match": {
+              "location": "StepDefinitionvalid.user_clicks_Login_Button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7946500,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user verify Home page is displayed",
+            "match": {
+              "location": "StepDefinitionvalid.user_verify_Home_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1105800,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user click valid location,hotelname,roomtype,roomnumber,checkindate,checkoutdate,adultsandchlidcountperroom",
+            "match": {
+              "location": "StepDefinitionvalid.user_click_valid_location_hotelname_roomtype_roomnumber_checkindate_checkoutdate_adultsandchlidcountperroom()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3576600,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user click search button",
+            "match": {
+              "location": "StepDefinitionvalid.user_click_search_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1974900,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user  verify price page is displayed",
+            "match": {
+              "location": "StepDefinitionvalid.user_verify_price_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 772300,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user selects select radio button",
+            "match": {
+              "location": "StepDefinitionvalid.user_selects_select_radio_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 828500,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user click contine button",
+            "match": {
+              "location": "StepDefinitionvalid.user_click_contine_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 940400,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user  verify booking page is displayed",
+            "match": {
+              "location": "StepDefinitionvalid.user_verify_booking_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1222100,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user enters valid first name and last name",
+            "match": {
+              "location": "StepDefinitionvalid.user_enters_valid_first_name_and_last_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1269900,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user enters valid billing address",
+            "match": {
+              "location": "StepDefinitionvalid.user_enters_valid_billing_address()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10702300,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "user enters  valid credit card number",
+            "match": {
+              "location": "StepDefinitionvalid.user_enters_valid_credit_card_number()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1107900,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user click Credit Card Type",
+            "match": {
+              "location": "StepDefinitionvalid.user_click_Credit_Card_Type()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 842500,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user clicks valid Expiry month,Expiry year",
+            "match": {
+              "location": "StepDefinitionvalid.user_clicks_valid_Expiry_month_Expiry_year()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1379400,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "user enters valid cvv number",
+            "match": {
+              "location": "StepDefinitionvalid.user_enters_valid_cvv_number()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 794900,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "user select book now button",
+            "match": {
+              "location": "StepDefinitionvalid.user_select_book_now_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1875900,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "user should get order number",
+            "match": {
+              "location": "StepDefinitionvalid.user_should_get_order_number()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "validation of booking   in adactinhotel Web Application",
+    "description": "",
+    "id": "validation-of-booking---in-adactinhotel-web-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/adactinhotelappbooking.feature",
+    "tags": []
+  }
+]
