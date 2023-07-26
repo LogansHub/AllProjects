@@ -1,7 +1,7 @@
 Feature: validation of booking   in adactinhotel Web Application
    
      
-   
+   @sanity @smoke @regression
 Scenario: TC01_validation of booking with valid details
   Given User launch Adactinhotel Web Application
   When User entres valid username and valid password

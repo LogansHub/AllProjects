@@ -1,20 +1,16 @@
 Feature: validation of Login functionality in facebook
 
-Background: 
+
+
+Scenario: Validation of Login with  invalid Details
 Given user lanch browser 
 Then user verify Error message is displayed
-
-Scenario Outline: Validation of Login with  invalid Details
-
-
-When user enters  invalid username "<username>"
-When user enters invalid  password "<password>"
+When user enters  invalid username and invalid password
+ |username|password|
+ |logan   |kumar   |
+ |yogan   | yogu   |
 And user clicks login button 
-
-Examples:
-|username|password|
-|logan   |kumar   |
-|kumar   |logan   |
+Then user verify Error message is displayed
 
 
  

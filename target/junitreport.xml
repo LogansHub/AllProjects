@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="54.388357">
+<testcase classname="validation of booking   in adactinhotel Web Application" name="TC01_validation of booking with valid details" time="54.388357">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at com.stepdefinition.StepDefinitionvalid.user_select_book_now_button(StepDefinitionvalid.java:174)&#13;&#10;&#9;at ✽.user select book now button(file:src/test/resources/Features/adactinhotelappbooking.feature:25)&#13;&#10;"><![CDATA[Given User launch Adactinhotel Web Application..............................passed
+When User entres valid username and valid password..........................passed
+When User clicks Login Button...............................................passed
+Then user verify Home page is displayed.....................................passed
+Then user click valid location,hotelname,roomtype,roomnumber,checkindate,checkoutdate,adultsandchlidcountperroom.passed
+Then user click search button...............................................passed
+Then user  verify price page is displayed...................................passed
+When user selects select radio button.......................................passed
+When user click contine button..............................................passed
+Then user  verify booking page is displayed.................................passed
+When user enters valid first name and last name.............................passed
+When user enters valid billing address......................................passed
+When user enters  valid credit card number..................................passed
+When user click Credit Card Type............................................passed
+When user clicks valid Expiry month,Expiry year.............................passed
+When user enters valid cvv number...........................................passed
+And user select book now button.............................................failed
+Then user should get order number...........................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.stepdefinition.StepDefinitionvalid.user_select_book_now_button(StepDefinitionvalid.java:174)
+	at ✽.user select book now button(file:src/test/resources/Features/adactinhotelappbooking.feature:25)
+]]></failure>
+</testcase>
+</testsuite>
