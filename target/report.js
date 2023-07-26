@@ -1,169 +1,209 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/FaceBook.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/adactinhotelappbooking.feature");
 formatter.feature({
-  "name": "validation of Login functionality in facebook",
+  "name": "validation of booking   in adactinhotel Web Application",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "name": "Validation of Login with  invalid Details",
+formatter.scenario({
+  "name": "TC01_validation of booking with valid details",
   "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "user enters  invalid username \"\u003cusername\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "user enters invalid  password \"\u003cpassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "user clicks login button",
-  "keyword": "And "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
+  "keyword": "Scenario",
+  "tags": [
     {
-      "cells": [
-        "username",
-        "password"
-      ]
+      "name": "@sanity"
     },
     {
-      "cells": [
-        "logan",
-        "kumar"
-      ]
+      "name": "@smoke"
     },
     {
-      "cells": [
-        "kumar",
-        "logan"
-      ]
+      "name": "@regression"
     }
   ]
 });
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
+formatter.before({
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user lanch browser",
+  "name": "User launch Adactinhotel Web Application",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "StepDefinitionsFb.user_lanch_browser()"
+  "location": "StepDefinitionvalid.user_launch_Adactinhotel_Web_Application()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user verify Error message is displayed",
+  "name": "User entres valid username and valid password",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitionvalid.user_entres_valid_username_and_valid_password()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User clicks Login Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitionvalid.user_clicks_Login_Button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user verify Home page is displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepDefinitionsFb.user_verify_Error_message_is_displayed()"
+  "location": "StepDefinitionvalid.user_verify_Home_page_is_displayed()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validation of Login with  invalid Details",
-  "description": "",
-  "keyword": "Scenario Outline"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user enters  invalid username \"logan\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "StepDefinitionsFb.user_enters_invalid_username(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters invalid  password \"kumar\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "StepDefinitionsFb.user_enters_invalid_password(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitionsFb.user_clicks_login_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "user lanch browser",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "StepDefinitionsFb.user_lanch_browser()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verify Error message is displayed",
+  "name": "user click valid location,hotelname,roomtype,roomnumber,checkindate,checkoutdate,adultsandchlidcountperroom",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepDefinitionsFb.user_verify_Error_message_is_displayed()"
+  "location": "StepDefinitionvalid.user_click_valid_location_hotelname_roomtype_roomnumber_checkindate_checkoutdate_adultsandchlidcountperroom()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Validation of Login with  invalid Details",
-  "description": "",
-  "keyword": "Scenario Outline"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user enters  invalid username \"kumar\"",
+  "name": "user click search button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitionvalid.user_click_search_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user  verify price page is displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitionvalid.user_verify_price_page_is_displayed()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user selects select radio button",
   "keyword": "When "
 });
 formatter.match({
-  "location": "StepDefinitionsFb.user_enters_invalid_username(String)"
+  "location": "StepDefinitionvalid.user_selects_select_radio_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user enters invalid  password \"logan\"",
+  "name": "user click contine button",
   "keyword": "When "
 });
 formatter.match({
-  "location": "StepDefinitionsFb.user_enters_invalid_password(String)"
+  "location": "StepDefinitionvalid.user_click_contine_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user clicks login button",
+  "name": "user  verify booking page is displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitionvalid.user_verify_booking_page_is_displayed()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user enters valid first name and last name",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitionvalid.user_enters_valid_first_name_and_last_name()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user enters valid billing address",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitionvalid.user_enters_valid_billing_address()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user enters  valid credit card number",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitionvalid.user_enters_valid_credit_card_number()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user click Credit Card Type",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitionvalid.user_click_Credit_Card_Type()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user clicks valid Expiry month,Expiry year",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitionvalid.user_clicks_valid_Expiry_month_Expiry_year()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user enters valid cvv number",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitionvalid.user_enters_valid_cvv_number()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user select book now button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitionsFb.user_clicks_login_button()"
+  "location": "StepDefinitionvalid.user_select_book_now_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user should get order number",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitionvalid.user_should_get_order_number()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "status": "skipped"
 });
 });

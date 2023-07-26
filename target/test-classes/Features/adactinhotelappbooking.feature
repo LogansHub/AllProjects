@@ -1,7 +1,7 @@
 Feature: validation of booking   in adactinhotel Web Application
    
      
-   
+   @sanity @smoke @regression
 Scenario: TC01_validation of booking with valid details
   Given User launch Adactinhotel Web Application
   When User entres valid username and valid password
@@ -24,6 +24,11 @@ Scenario: TC01_validation of booking with valid details
   When user enters valid cvv number
   And user select book now button
   Then user should get order number
+  
+  Scenario:TC02_validation of booking with invalid
+  Given user lanches browser
+  When  user enters invalid "<username>" and "<password>"
+  
   
     
 
