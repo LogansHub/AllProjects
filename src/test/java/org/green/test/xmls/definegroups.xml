@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <test name="Test">
+     
+     <groups>
+             <define name="one">
+          <include name="sanitary testing"></include>
+          <include name="Regression testing"> </include>
+          </define>
+          <run>
+               <include name="one">
+               </include>
+          </run>
+     </groups>
+    
+    <classes>
+      <class name="org.green.test.groupingsec.copy.GroupingSec"/>
+      <class name="org.green.test.grouping.Grouping"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+       <parameter name="password" value="Akumars"></parameter>
+  
+  <test name="Test">
+  <parameter name="username" value="Logan"></parameter>
+     <parameter name="password" value="Lkumars"></parameter>
+    <classes>
+           <class name="org.green.test.testngassert.HardAssert"/>
+      </classes>
+  </test> <!-- Test -->
+  
+ <test name="Test1">
+   <parameter name="username" value="arun"></parameter>
+       <parameter name="password" value="Akumars"></parameter>
+        <classes>
+          <class name="org.green.test.testngassert.HardAssert"/>
+              </classes>
+   </test> <!-- Test -->
+  
+  
+  
+</suite> <!-- Suite -->
